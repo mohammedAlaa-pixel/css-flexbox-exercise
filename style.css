@@ -1,0 +1,154 @@
+*
+{
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    width: 100%;
+    background-color:whitesmoke;
+    height: 100%;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 70%;
+
+    height: 100%;
+    margin-left: 40px;
+}
+
+.client1{
+    background-color:hsl(263, 55%, 52%) ;
+    width: 60%;
+    height: 40%;
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 600;
+    color: white;
+    border-radius: 15px;
+}
+
+.name1{
+    width:30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    
+}
+.name1 p{
+    margin-left: 20px;
+  
+}
+.name1 img{
+    border-radius: 50%;
+}
+.svg{
+    position: relative;
+     left:550px;
+     bottom: 180px;
+}
+.client2{
+    color: white;
+    height:40%;
+    width:35%;
+    background-color: hsl(217, 19%, 35%);
+    margin-left: 50px;
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 600;
+    color: white;
+    border-radius: 15px;
+}
+.name2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+}
+.name2 p{
+    margin-left: 20px;
+}
+.name2 img{
+    border-radius: 50%;
+}
+.client3{
+    color:black;
+    height:40%;
+    width:35%;
+    background-color:white;
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 600;
+    border-radius: 15px;
+    transform: translateY(100px);
+}
+.client4{
+   background-color:  hsl(219, 29%, 14%);
+    width: 60%;
+    height: 40%;
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 600;
+    color: white;
+    border-radius: 15px;
+    transform: translateY(100px);
+    margin-left: 50px;
+}
+.side{
+  
+    height: 100%;
+    width: 20%;
+    background-color: burlywood;
+    padding: 30px;
+    border-radius: 15px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 600;
+    
+ 
+}
+.name5{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width:50%;
+
+    
+}
+.name5 img{
+    border-radius: 50%;
+}
+.caption{
+    width: 60%;
+    
+    height: 70%;
+    opacity: 70%;
+    
+}
+
+
+/*at mobile 375px*/
+@media screen and (max-width:375px)
+{
+    .main{
+        width: 100%;
+        height: 100%;
+        
+    }
+    .side{
+        width:100%;
+        height: 100%;
+
+    }
+    .client1,.client2,.client3,.client4,.client5 {
+        width:100%;
+        height: 100%;
+    }
+}
