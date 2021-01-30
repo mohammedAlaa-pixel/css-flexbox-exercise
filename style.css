@@ -3,26 +3,23 @@
     box-sizing: border-box;
 }
 .container{
-    display: flex;
     width: 100%;
-    background-color:whitesmoke;
-    height: 100%;
+    display: flex;
+   
 }
 .main{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     align-items: flex-start;
-    align-content: flex-start;
+    align-content:space-around;
     width: 70%;
-
-    height: 100%;
     margin-left: 40px;
+    padding: 10px;
 }
-
 .client1{
     background-color:hsl(263, 55%, 52%) ;
     width: 60%;
-    height: 40%;
     padding: 15px;
     font-size: 16px;
     font-family: 'Barlow Semi Condensed', sans-serif;
@@ -30,32 +27,29 @@
     color: white;
     border-radius: 15px;
 }
-
-.name1{
-    width:30%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:flex-start;
-    
+.header{
+    width:40%;
 }
-.name1 p{
-    margin-left: 20px;
-  
-}
-.name1 img{
+.header img{
+    float: left;
     border-radius: 50%;
 }
-.svg{
-    position: relative;
-     left:550px;
-     bottom: 180px;
+.name{
+    margin-left: 10px;
+    float: left;
+}
+.clr{
+    clear: both;
+}
+.position{
+    margin-left: 60px;
+    margin-top: 0px;
+    
 }
 .client2{
     color: white;
-    height:40%;
     width:35%;
     background-color: hsl(217, 19%, 35%);
-    margin-left: 50px;
     padding: 15px;
     font-size: 16px;
     font-family: 'Barlow Semi Condensed', sans-serif;
@@ -63,20 +57,8 @@
     color: white;
     border-radius: 15px;
 }
-.name2{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:flex-start;
-}
-.name2 p{
-    margin-left: 20px;
-}
-.name2 img{
-    border-radius: 50%;
-}
 .client3{
     color:black;
-    height:40%;
     width:35%;
     background-color:white;
     padding: 15px;
@@ -84,25 +66,19 @@
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: 600;
     border-radius: 15px;
-    transform: translateY(100px);
 }
 .client4{
    background-color:  hsl(219, 29%, 14%);
     width: 60%;
-    height: 40%;
     padding: 15px;
     font-size: 16px;
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: 600;
     color: white;
     border-radius: 15px;
-    transform: translateY(100px);
-    margin-left: 50px;
 }
 .side{
-  
-    height: 100%;
-    width: 20%;
+    width: 25%;
     background-color: burlywood;
     padding: 30px;
     border-radius: 15px;
@@ -110,45 +86,47 @@
     background-color: white;
     color: black;
     font-family: 'Barlow Semi Condensed', sans-serif;
-    font-weight: 600;
-    
- 
-}
-.name5{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    width:50%;
-
-    
-}
-.name5 img{
-    border-radius: 50%;
+    font-weight: 600;  
 }
 .caption{
-    width: 60%;
-    
-    height: 70%;
-    opacity: 70%;
-    
+    opacity: 70%;  
 }
-
-
-/*at mobile 375px*/
-@media screen and (max-width:375px)
+@media  only screen and ( max-width:800px)
 {
-    .main{
-        width: 100%;
-        height: 100%;
+    .header{
+        width:100%;
+
+        text-align: center;
+    }
+    .name {
+        float: none;
+    }
+    .header img {
+        float: none;
+    }
+     .client1,.client2,.client3,.client4
+     {
+         width: 100%;
+         margin-top: 15px;
+     }
+     .position{
+         margin-left: 10px;
+     }
+
+      .container{
+          flex-wrap: wrap;
+      }
+     .main{
+        display: flex;
         
+        flex-wrap: wrap;
+        justify-content:flex-start;
+        margin-left: 0px;
+        align-content:flex-start;
+        width: 100%;
     }
     .side{
-        width:100%;
-        height: 100%;
-
-    }
-    .client1,.client2,.client3,.client4,.client5 {
-        width:100%;
-        height: 100%;
+        width: 100%;
+        margin-top: 15px;
     }
 }
